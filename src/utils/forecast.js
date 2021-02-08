@@ -12,6 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         }else{
             const curr=body.current
             const data = curr.weather_descriptions[0] + '. It is currently ' + curr.temperature + ' degrees Celsius outside. There is a ' + curr.precip + '% chance of rainfall. '
+            
             callback(undefined, data)
         }
         
